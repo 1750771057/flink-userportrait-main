@@ -1,3 +1,9 @@
+# 项目选择Flink的原因
+````
+  1.Flink从1.19版本开始集成了Blink（阿里）加持，（Hive,Sql等支持力度正在增强）并且升级到java 1.11本项目暂时按照1.8
+  2.集成TensorFlow和Paddelpaddel比较容易（Flask以RestFull方式，分布式的研究中），虽然有alink之类的ML目前暂时不研究
+  3.集成批流一体的，简化代码复杂度，减少代码维护，spark也很强大，并且生态很完善，本项目处于新开发因此未研究替换Spark的好坏，也是处于学习的目的
+  4.集成Nacos等优化工程的配置管理，nacos采用1.12版本以上支持Mysql8.0
 # 框架搭建环境
 ````
 - 编译器：IDEA 2019.1
@@ -6,7 +12,7 @@
 - 系统：Win 10
 ````
 # 数据库
-## MySQL
+## MySQL 8.0
 ```
 - 版本：mysql-installer-community-8.0.15.0.msi
 - 账户名:root
